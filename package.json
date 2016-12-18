@@ -1,16 +1,44 @@
 {
-  "name": "caffeine.node",
+  "name": "caffeine",
   "version": "0.0.1",
-  "description": "send http request to given urls periodically",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "airtial (https://github.com/airtial)",
-  "repository": {
-    "type": "git"
-  , "url": "https://github.com/airtial/caffeine.node.git"
-  },
+  "author": "airt <airtial@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "bin": {
+    "caffeine": "bin/caffeine"
+  },
+  "files": [
+    "bin/*",
+    "configs/*",
+    "src/*",
+    "test/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airt/caffeine"
+  },
+  "dependencies": {
+    "commander": "^2.0.0",
+    "cson": "^4.0.0",
+    "timeout-ts": "^0.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.0.0",
+    "coveralls": "^2.0.0",
+    "del": "^2.0.0",
+    "gulp": "^3.0.0",
+    "gulp-ava": "^0.15.0",
+    "gulp-babel": "^6.0.0",
+    "gulp-coffee": "^2.0.0",
+    "gulp-coffeelint": "^0.6.0",
+    "nyc": "^10.0.0"
+  },
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "report": "nyc report --reporter=html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  }
 }
