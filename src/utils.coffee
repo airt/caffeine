@@ -1,4 +1,3 @@
-
 # @param {Number} init
 # @return {() => Number}
 export createCounter = (init = 0) ->

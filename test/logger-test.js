@@ -1,4 +1,3 @@
-
 import test from 'ava'
 import cson from 'cson'
 import { Logger } from '../lib/logger'

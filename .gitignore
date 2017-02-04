@@ -1,12 +1,13 @@
-
 lib
-docs
 dist
+docs
 logs
 pids
 
 lib-cov
+reports
 coverage
+flow-typed
 node_modules
 
 *.pem

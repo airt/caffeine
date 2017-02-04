@@ -1,4 +1,3 @@
-
 import test from 'ava'
 import path from 'path'
 import { run } from '../lib/cli'

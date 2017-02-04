@@ -1,4 +1,3 @@
-
 # caffeine
 
 [![Build Status][build-badge]][build-status]
@@ -16,7 +15,7 @@ run script
 
     $ bin/caffeine
 
-    $ bin/caffeine --urls-file configs/urls.json
+    $ bin/caffeine --urls-file config/urls.json
 
     $ bin/caffeine --urls http://example.org,http://localhost:404
 

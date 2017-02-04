@@ -1,4 +1,3 @@
-
 import path from 'path'
 import program from 'commander'
 import timeout from 'timeout-ts'
@@ -15,7 +14,7 @@ export run = (args) ->
     option('-l, --listen <port>', 'create server to show logs', parseInt).
     option('-i, --interval <minutes>', 'set sending interval', parseInt).
     option('-u, --urls <url>,<urls>', 'set urls', (urls) -> urls.split(',')).
-    option('-f, --urls-file <file>', 'set urls file', 'configs/urls.json').
+    option('-f, --urls-file <file>', 'set urls file', 'config/urls.json').
     option('-o, --only-once', 'send requests only once').
     option('-s, --silent', 'silent mode').
     parse(args)
